@@ -87,7 +87,7 @@ I joined the fact table with all dimension tables to make sure every key matches
 
 ### Core KPIs : 
 * Total Orders - 197,401
-* Total Revenue - ₹21 Million
+* Total Revenue - ₹53 Million
 * Average Dish Price - ₹268.50
 * Average Rating - 4.34
 
