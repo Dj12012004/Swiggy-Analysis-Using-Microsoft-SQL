@@ -1,4 +1,7 @@
 # Swiggy-Analysis-Using-Microsoft-SQL
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a280f6f5-6dc5-426a-aaad-21896ebd8e20" />
+
 End-to-end SQL data warehouse project to analyze Swiggy sales data. Created a star schema (fact and dimensions), cleaned the data, and created KPIs such as revenue, order, location, pricing, and rating distribution. Provided organized business insights using T-SQL on Microsoft SQL Server.
 
 
