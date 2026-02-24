@@ -11,6 +11,7 @@ The project showcases:
 * 4. KPI Development
 * 5. Business Insight Extraction
 
+## Tools Used : Microsoft SQL Server , Dimensional Modeling(Star Schema Design) 
 
 ## Business Objective
 To analyze food delivery performance across:
@@ -98,8 +99,7 @@ I joined the fact table with all dimension tables to make sure every key matches
      * June - 24,382
      * July - 24,936
      * August - 25,227
-   Highest: January
-   Lowest: February
+       
   * Monthly Revenue(₹) :-
      * January - 6,823,981 
      * February - 6,268,106
@@ -111,12 +111,53 @@ I joined the fact table with all dimension tables to make sure every key matches
      * August - 6,790,899
 
 #### Quarterly Trends :
-  * Quarterly Order Volume
-  * Quarterly Revenue
+  * Quarterly Order Volume :-
+      * Q1 - 73,084
+      * Q2 - 74,154
+      * Q3 -  50,163
+  * Quarterly Revenue(₹) :-
+      * Q1 - 19,664,826
+      * Q2 - 19,896,746
+      * Q3 - 13,441,167
 
 #### Day of Week Pattern :
-  * Weekend shows slightly higher demand
-  
+  * Weekend shows slightly higher demand :-
+      * Sunday - 28,469
+      * Monday - 27,568
+      * Tuesday - 27,413
+      * Wednesday - 28,284
+      * Thursday - 28,450 
+      * Friday - 28,284
+      * Saturday - 28,933
+   
+### Location Based Analysis : 
+  * Top 10 Cities by Orders - Bengaluru leads significantly (~20K orders).
+  * Revenue Contribution by State - Karnataka highest revenue-generating state
+
+### Food Performance Analysis :
+  * Top Restaurants - McDonald's & KFC dominate volume
+  * Top Categories - Desserts , Main Course , Beverages
+  * Most Ordered Dishes - Veg Fried Rice , Choco Lava Cake , Jeera Rice
+  * Cuisine Performance - All top categories maintain average ratings above 4.2.
+
+### Customer Spending Insights :
+  * ₹100–199 → Highest demand
+  * ₹200–299 → Second highest
+  * ₹500+ → Lowest share
+Indicates strong mid-range spending pattern.
+
+### Ratings Distribution :
+  * Majority ratings between 4.0–4.8
+  * Peak concentration at 4.40
+  * Overall satisfaction skewed positively
+
+## 5. Key Business Insights :
+
+* Demand is stable across months with no extreme seasonality.
+* Karnataka & Bengaluru dominate performance.
+* Fast food chains outperform others in volume.
+* Majority customers prefer mid-range pricing.
+* Customer sentiment is strongly positive (Avg rating: 4.34).
 
   
 
