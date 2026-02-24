@@ -21,6 +21,7 @@ To analyze food delivery performance across:
 * Customer Ratings
 The goal is to identify trends, high performing segments, and customer behavior patterns.
 
+
 ## Dataset Description
 The dataset swiggy_data contains food delivery transaction level records including:
 * State
@@ -49,6 +50,8 @@ The Following validations were performed :
 ## 2. Dimensional Modeling - Star Schema 
 A Star Schema is a way of organizing data for analysis where one central table (fact table) stores measurable data like orders and revenue, and it is connected to multiple smaller tables (dimension tables) that describe details like date, location, restaurant, and category. This structure makes data easy to understand, query, and analyze efficiently.
 
+## 3. Fact & Dimension Table Design
+
 The Star schema contains :
 ### Dimension Tables
 * dim_date
@@ -75,6 +78,20 @@ Foreign Keys :
 
 ### Finally Schema validation :
 I joined the fact table with all dimension tables to make sure every key matches correctly. All relationships were checked and the star schema is working properly.
+
+##  4. KPI Development
+
+### Core KPIs : 
+* Total Orders --> 197,401
+* Total Revenue --> ₹21 Million
+* Average Dish Price --> ₹268.50
+* Average Rating --> 4.34
+
+### Date Based Analysis :
+#### Monthly Trends :
+    * Monthly Order Volume
+    * Monthly Revenue
+
   
 
       
