@@ -7,7 +7,7 @@ from fact_swiggy_orders
 
 --Total Revenue(INR Million)
 select 
-format(sum(convert(float,price_inr))/1000000,'N2' + 'INR Million')
+format(sum(convert(float,price_inr))/1000000,'N2') + 'INR Million'
 as Total_Revenue
 from fact_swiggy_orders
 
