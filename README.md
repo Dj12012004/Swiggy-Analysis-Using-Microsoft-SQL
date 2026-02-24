@@ -82,15 +82,41 @@ I joined the fact table with all dimension tables to make sure every key matches
 ##  4. KPI Development
 
 ### Core KPIs : 
-* Total Orders --> 197,401
-* Total Revenue --> ₹21 Million
-* Average Dish Price --> ₹268.50
-* Average Rating --> 4.34
+* Total Orders - 197,401
+* Total Revenue - ₹21 Million
+* Average Dish Price - ₹268.50
+* Average Rating - 4.34
 
 ### Date Based Analysis :
 #### Monthly Trends :
-    * Monthly Order Volume
-    * Monthly Revenue
+  * Monthly Order Volume :-
+     * January - 25,393
+     * February - 23,291
+     * March - 24,400
+     * April - 24,584
+     * May - 25,188
+     * June - 24,382
+     * July - 24,936
+     * August - 25,227
+   Highest: January
+   Lowest: February
+  * Monthly Revenue(₹) :-
+     * January - 6,823,981 
+     * February - 6,268,106
+     * March - 6,572,738
+     * April - 6,590,449
+     * May - 6,792,621
+     * June - 6,513,676
+     * July - 6,650,268
+     * August - 6,790,899
+
+#### Quarterly Trends :
+  * Quarterly Order Volume
+  * Quarterly Revenue
+
+#### Day of Week Pattern :
+  * Weekend shows slightly higher demand
+  
 
   
 
