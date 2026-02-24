@@ -90,46 +90,16 @@ I joined the fact table with all dimension tables to make sure every key matches
 
 ### Date Based Analysis :
 #### Monthly Trends :
-  * Monthly Order Volume :-
-     * January - 25,393
-     * February - 23,291
-     * March - 24,400
-     * April - 24,584
-     * May - 25,188
-     * June - 24,382
-     * July - 24,936
-     * August - 25,227
-       
-  * Monthly Revenue(₹) :-
-     * January - 6,823,981 
-     * February - 6,268,106
-     * March - 6,572,738
-     * April - 6,590,449
-     * May - 6,792,621
-     * June - 6,513,676
-     * July - 6,650,268
-     * August - 6,790,899
-
+  * Monthly Order Volume - January leads in order volume with orders 25,393.     
+  * Monthly Revenue(₹) - January leads in monthly revenue as well with ₹ 6,823,981.
+    
 #### Quarterly Trends :
-  * Quarterly Order Volume :-
-      * Q1 - 73,084
-      * Q2 - 74,154
-      * Q3 -  50,163
-  * Quarterly Revenue(₹) :-
-      * Q1 - 19,664,826
-      * Q2 - 19,896,746
-      * Q3 - 13,441,167
+  * Quarterly Order Volume - Q2 is shown to have higher order volume with orders 74,154.
+  * Quarterly Revenue(₹) - Likewise , the revenue of Q2 leads with ₹ 19,896,746.
 
 #### Day of Week Pattern :
-  * Weekend shows slightly higher demand :-
-      * Sunday - 28,469
-      * Monday - 27,568
-      * Tuesday - 27,413
-      * Wednesday - 28,284
-      * Thursday - 28,450 
-      * Friday - 28,284
-      * Saturday - 28,933
-   
+  * Weekend shows slightly higher demand with Saturday and Sunday having orders 28,933 and 28,469 respectively.
+       
 ### Location Based Analysis : 
   * Top 10 Cities by Orders - Bengaluru leads significantly (~20K orders).
   * Revenue Contribution by State - Karnataka highest revenue-generating state
