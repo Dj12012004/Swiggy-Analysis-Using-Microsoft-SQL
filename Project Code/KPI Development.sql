@@ -1,30 +1,30 @@
 --KPIs
 --Core KPIs
 
---Total Orders
+-- Q1 Total Orders
 select count(*) as Total_Orders
 from fact_swiggy_orders
 
---Total Revenue(INR Million)
+-- Q2 Total Revenue(INR Million)
 select 
 format(sum(convert(float,price_inr))/1000000,'N2') + 'INR Million'
 as Total_Revenue
 from fact_swiggy_orders
 
---Average Dish Price
+-- Q3 Average Dish Price
 select
 format(avg(convert(float,price_inr)), 'N2') + 'INR'
 as Average_Price_Per_Dish
 from fact_swiggy_orders
 
---Average Rating
+-- Q4 Average Rating
 select
 format(avg(rating), 'N2')
 as Average_Rating_Per_Order
 from fact_swiggy_orders
 
---Date Based Analysis
---Monthly Order Trends
+-- Date Based Analysis
+-- Q5 Monthly Orders
 select
 d.year ,
 d.month , 
@@ -36,7 +36,7 @@ group by d.year ,
 d.month , 
 d.month_name 
 order by Total_Orders desc;
-
+-- Q6 Monthly Revenue 
 select
 d.year , 
 d.month ,
@@ -50,7 +50,7 @@ d.month ,
 d.month_name
 order by sum(price_inr) desc 
 
---Quarterly Order Trends
+-- Q7 Quarterly Order Trends
 select 
 d.year , 
 d.quarter , 
@@ -73,7 +73,7 @@ d.year ,
 d.quarter
 order  by sum(Price_INR) desc
 
---Day of the Week Orders Pattern
+-- Q8 Day of the Week Orders Pattern
 select 
 datename(weekday,d.full_date) as Day_Name ,
 count(*) as Total_Orders
@@ -85,7 +85,7 @@ datepart(weekday,d.full_date)
 order by datepart(weekday,d.full_date) 
 
 --Location Based Analysis
---Top 10 Cities By Order Volume
+-- Q9 Top 10 Cities By Order Volume
 select top 10
 l.city,
 count(*) as Total_Orders 
@@ -96,7 +96,7 @@ group by
 l.city
 order by count(*) desc
 
---Revenue Contribution By States
+-- Q10 Revenue Contribution By States
  select 
  l.state , 
  sum(f.price_inr) as Total_Revenue
@@ -108,7 +108,7 @@ order by count(*) desc
  order by sum(price_INR) desc
  
  --Food Performance 
- --Top 10 Restaurant by Order
+ -- Q11 Top 10 Restaurant by Order
  select top 10
  r.restaurant_name ,
  count(f.order_id) as Total_Orders
@@ -118,7 +118,7 @@ order by count(*) desc
  r.restaurant_name
  order by count(f.order_id) desc
 
- --Top Categories(Indian,Chinese,etc)
+ -- Q12 Top Categories(Indian,Chinese,etc)
  select 
  c.category ,
  count(f.category_id) as Top_Categories
@@ -131,7 +131,7 @@ order by count(*) desc
  offset 1 row
  fetch next 10 rows only
  
- --Most Ordered Dishes
+ -- Q13 Most Ordered Dishes
  select Top 10
  d.dish_name , 
  count(f.dish_id) as Order_Count
@@ -142,7 +142,7 @@ order by count(*) desc
  d.Dish_Name
  order by count(f.dish_id) desc
  
- --Cuisine Performance(Orders + Average Rating)
+ -- Q14 Cuisine Performance(Orders + Average Rating)
 select 
 c.category,
 count(f.order_id) as Total_Orders,
@@ -157,7 +157,7 @@ offset 1 row
 fetch next 10 rows only
 
 --Customer Spending Insights
---Total Orders By Price Range
+-- Q15 Total Orders By Price Range
 select 
 	case 
 		when convert(float,price_inr) < 100 then 'Under 100'
@@ -178,7 +178,7 @@ group by
 	end 
 order by Total_Orders desc
 
---Rating Count Distribution (1-5)
+-- Q16 Rating Count Distribution (1-5)
 select
 rating ,
 count(*) as Rating_Count
